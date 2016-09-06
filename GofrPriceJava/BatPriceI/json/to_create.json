@@ -1,0 +1,10 @@
+{
+	"items": [
+		{
+			"category": "Phone",
+			"name": "Telefon iPhone 6 16 GB",
+			"mandatory": "iPhone 6",
+            "forbidden": ["iPhone 6 Plus", "iPhone 6+"]
+		}
+	]
+}

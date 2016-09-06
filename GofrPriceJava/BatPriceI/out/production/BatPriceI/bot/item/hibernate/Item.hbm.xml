@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="bot.item.hibernate.Item" table="ITEM">
+		<meta attribute="class-description">
+			This class contains the item details.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native"/>
+		</id>
+		<set name="itemInfoArr" cascade="all">
+			<key column="item_id"/>
+			<one-to-many class="bot.item.hibernate.ItemInfo"/>
+		</set>
+		<property name="name" column="name" type="string"/>
+		<property name="details" column="details" type="string"/>
+		<property name="photoURL" column="photo_url" type="string"/>
+	</class>
+
+	<class name="bot.item.hibernate.ItemInfo" table="ITEM_INFO">
+		<meta attribute="class-description">
+			This class contains the item info records.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native"/>
+		</id>
+		<set name="priceInfoArr" cascade="all">
+			<key column="item_info_id"/>
+			<one-to-many class="bot.item.hibernate.PriceInfo"/>
+		</set>
+		<property name="crawlerID" column="crawler_id" type="int"/>
+		<property name="url" column="url" type="string"/>
+	</class>
+
+	<class name="bot.item.hibernate.PriceInfo" table="PRICE_INFO">
+		<meta attribute="class-description">
+			This class contains the price info records.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native"/>
+		</id>
+		<property name="price" column="price" type="float"/>
+		<property name="date" column="date" type="date"/>
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+{
+	"items": [
+		{
+			"category": "Phone",
+			"name": "Telefon Apple iPhone 6 16GB",
+			"mandatory": "iPhone 6",
+            "forbidden": ["iPhone 6 Plus", "iPhone 6+"],
+			"forcedSite": ""
+		},
+		{
+			"category": "Phone",
+			"name": "Telefon Apple iPhone 5s 16GB",
+			"mandatory": "iPhone 5s",
+			"forcedSite": ""
+		},
+		{
+			"category": "Phone",
+			"name": "Telefon LG Nexus 5 16GB",
+			"mandatory": "Nexus 5",
+			"forcedSite": ""
+		},
+		{
+			"category": "Phone",
+			"name": "Telefon LG Nexus 4 16GB",
+			"mandatory": "Nexus 4",
+			"forcedSite": ""
+		}
+	]
+}

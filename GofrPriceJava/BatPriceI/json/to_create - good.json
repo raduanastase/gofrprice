@@ -1,0 +1,25 @@
+{
+	"items": [
+		{
+			"category": "Phone",
+			"name": "Telefon iPhone 6 16 GB",
+			"mandatory": "iPhone 6",
+            "forbidden": ["iPhone 6 Plus", "iPhone 6+"]
+		}/*,
+		{
+			"category": "Phone",
+			"name": "Telefon iPhone 5s 16 GB",
+			"mandatory": "iPhone 5s"
+		},
+		{
+			"category": "Phone",
+			"name": "Telefon Nexus 5 16 GB",
+			"mandatory": "Nexus 5"
+		},
+		{
+			"category": "Phone",
+			"name": "Telefon Nexus 4 16 GB",
+			"mandatory": "Nexus 4"
+		}*/
+	]
+}
